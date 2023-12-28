@@ -19,7 +19,9 @@
                             </div>
                             <div class="flex-grow-1 align-self-center overflow-hidden">
                                 <div>
-                                    <h5 class="text-truncate font-size-18"><a href="/product/{{product.p_id}}"
+                                    <h5 class="text-truncate font-size-18">
+                                        <i># {{product.p_id}}</i><br><br>
+                                        <a href="/product/{{product.p_id}}"
                                             class="text-dark">{{product.p_name}} </a></h5>
                                 </div>
                             </div>
@@ -78,16 +80,16 @@
                                         </tr>
                                         <tr>
                                             <td>Tổng tiền hóa đơn:</td>
-                                            <td class="text-end sub-total">$ 780</td>
+                                            <td class="text-end sub-total"></td>
                                         </tr>
-                                        <tr>
+                                        {{!-- <tr>
                                             <td>Discount (option) : </td>
                                             <td class="text-end">- $ 78</td>
                                         </tr>
                                         <tr>
                                             <td>Shipping Charge (option) :</td>
                                             <td class="text-end">$ 25</td>
-                                        </tr>
+                                        </tr> --}}
                                         <tr>
                                             <td>Thuế (VAT): </td>
                                             <td class="text-end tax"></td>
